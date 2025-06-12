@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <>
-      <div>
+      <div className="font-retro text-4xl">
         <form onSubmit={handleSubmit} action="https://docs.google.com/forms/d/e/1FAIpQLSd057zq5_tY0D7xCrtiKeJZGQC1DBn4zTjOAxPWyFM-pDnGqA/formResponse">
           <select name="entry.2123345968" >
             <option value="beginner">

@@ -1,5 +1,12 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import localFont from 'next/font/local'
+
+const retroFloral = localFont({
+  src: '../../public/fonts/retro-floral.woff2',
+  display: 'swap',
+  variable: '--font-retro'
+})
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,10 +25,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" >
+      <body className={`${retroFloral.variable} antialiased`} >
+        {/* <h1 className="font-retro text-[48px] ">
+          From <br /> nothing <br /> courses
+        </h1> */}
         {children}
       </body>
     </html>
