@@ -1,5 +1,5 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Rubik } from "next/font/google";
 import localFont from 'next/font/local'
 
 const retroFloral = localFont({
@@ -8,14 +8,15 @@ const retroFloral = localFont({
   variable: '--font-retro'
 })
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const simplifica = localFont({
+  src: '../../public/fonts/simplifica.woff2',
+  display: 'swap',
+  variable: '--font-simplifica'
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const rubik = Rubik({
+  variable: "--font-rubik",
+  subsets: ["latin", "arabic"],
 });
 
 export const metadata = {
@@ -26,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" >
-      <body className={`${retroFloral.variable} antialiased`} >
+      <body className={`${retroFloral.variable} ${simplifica.variable} ${rubik.variable} antialiased`} >
         {/* <h1 className="font-retro text-[48px] ">
           From <br /> nothing <br /> courses
         </h1> */}

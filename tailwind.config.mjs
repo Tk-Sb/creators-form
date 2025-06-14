@@ -8,7 +8,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        retro: ['var(--font-retro)', 'sans-serif'],
+        retro: ['var(--font-retro)', 'var(--font-rubik)'],
+        simplifica: ['var(--font-simplifica)', 'var(--font-rubik)'],
+        rubik: ['var(--font-rubik)', 'sans-serif'],
       },
       colors: {
         background: "var(--background)",
