@@ -1,10 +1,10 @@
 'use client'
+
 import Autoplay from "embla-carousel-autoplay"
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
 
 export default function Home() {
   
-
   return (
     <>
       <Carousel 

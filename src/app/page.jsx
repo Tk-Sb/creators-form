@@ -34,23 +34,23 @@ export default function Home() {
   return (
     <>
       <div className="w-full h-fit flex ">
-        <div>
-          <svg width="624" height="862" viewBox="0 0 624 862" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="hidden lg:block " >
+          <svg width="479" height="862" viewBox="0 0 479 862" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M457.971 0L463.209 43.3C468.334 86.7 478.809 173.3 478.586 260C478.363 346.7 467.666 433.3 465.214 520C462.763 606.7 468.78 693.3 460.534 780C452.4 866.7 430.114 953.3 421.2 1040C412.286 1126.7 416.743 1213.3 418.971 1256.7L421.2 1300H0V1256.7C0 1213.3 0 1126.7 0 1040C0 953.3 0 866.7 0 780C0 693.3 0 606.7 0 520C0 433.3 0 346.7 0 260C0 173.3 0 86.7 0 43.3V0H457.971Z" fill="#A78BF5"/>
             <path d="M312 0L309.549 43.3C307.209 86.7 302.306 173.3 305.871 260C309.437 346.7 321.249 433.3 319.02 520C316.791 606.7 300.523 693.3 289.38 780C278.237 866.7 272.22 953.3 266.649 1040C261.077 1126.7 255.951 1213.3 253.277 1256.7L250.714 1300H0V1256.7C0 1213.3 0 1126.7 0 1040C0 953.3 0 866.7 0 780C0 693.3 0 606.7 0 520C0 433.3 0 346.7 0 260C0 173.3 0 86.7 0 43.3V0H312Z" fill="#6F54B5"/>
             <path d="M158.229 0L161.906 43.3C165.694 86.7 173.049 173.3 168.257 260C163.466 346.7 146.306 433.3 150.094 520C153.771 606.7 178.286 693.3 176.614 780C174.943 866.7 147.086 953.3 133.491 1040C120.009 1126.7 120.677 1213.3 121.123 1256.7L121.457 1300H0V1256.7C0 1213.3 0 1126.7 0 1040C0 953.3 0 866.7 0 780C0 693.3 0 606.7 0 520C0 433.3 0 346.7 0 260C0 173.3 0 86.7 0 43.3V0H158.229Z" fill="#392178"/>
           </svg>
         </div>
-        <div className="w-full py-12 pr-32 flex flex-col gap-7 ">
-          <div className="w-full h-fit flex flex-col gap-0 ">
-            <div className="w-full h-fit font-retro text-5xl bg-blue-">
+        <div className="w-full py-12 px-8 flex flex-col gap-7 ">
+          <div className="w-full h-fit flex flex-col gap-2 ">
+            <div className="w-full h-fit font-retro leading-[1.2] text-4xl ">
               FROM
                 <br />
               NOTHING
                 <br />
               COURSES
             </div>
-            <div className="w-full h-fit text-right font-rubik text-5xl font-medium ">
+            <div className="w-full h-fit text-right leading-[1.2] font-rubik text-2xl font-medium ">
               كورسات
               <br />
               للهروب من حياة ما بتمثلك
