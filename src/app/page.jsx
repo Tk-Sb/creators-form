@@ -17,17 +17,17 @@ export default function Home() {
     e.preventDefault()
     const form = e.target
     const formData = new FormData(form)
+    console.log("ass",formData)
 
-    console.log(formData)
-    
     try {
       await fetch(form.action, {
         method: 'POST',
         body: formData,
         mode: 'no-cors'
       });
+      setStep("3")
       // Redirect after successful submission
-      // window.location.href = '/' // Your custom success page
+      window.location.href = '/' // Your custom success page
     } catch (error) {
       console.error('Error:', error)
       // Handle error case
@@ -144,7 +144,7 @@ export default function Home() {
             }
             {step !== '3' && 
               <>
-                <form onSubmit={handleSubmit} action="https://docs.google.com/forms/d/e/1FAIpQLSePLzhT6B5fOD-Ml9kXvNN1SKxDHYtZEr5HCHItaGYKtysRYQ/formResponse" className="w-full h-fit flex flex-col gap-4 ">
+                <form onSubmit={handleSubmit} action="https://docs.google.com/forms/d/e/1FAIpQLSd057zq5_tY0D7xCrtiKeJZGQC1DBn4zTjOAxPWyFM-pDnGqA/formResponse" className="w-full h-fit flex flex-col gap-4 ">
                   <div className={`w-full h-fit flex flex-col gap-2 ${step === '2' ? 'hidden' : 'visible'} `}>
                     <label htmlFor="username" className="w-full h-fit font-rubik font-medium text-right ">
                       الاسم
@@ -152,7 +152,7 @@ export default function Home() {
                     <input 
                       type="text"
                       id="username"
-                      name="entry.644568262"
+                      name="entry.2123345968"
                       placeholder={'اسم المستخدم'}
                       value={username}
                       className={`w-full h-11 font-rubik font-normal text-right px-3 border-2 border-[#D9D9D9] rounded-lg `}
@@ -167,7 +167,7 @@ export default function Home() {
                     <input
                       type="text"
                       id="phone-number"
-                      name="entry.470914132"
+                      name="entry.1694561439"
                       placeholder={`+963-123-456-789`}
                       value={phoneNumber}
                       className="w-full h-11 font-rubik font-normal text-left px-3 border-2 border-[#D9D9D9] rounded-lg " 
@@ -196,7 +196,7 @@ export default function Home() {
                             <input
                               type="radio"
                               value="computer"
-                              name="entry.807958582"
+                              name="entry.2068790798"
                               checked={selectedOption === 'computer'}
                               onChange={(e) => setSelectedOption(e.target.value)}
                               className={`hidden `}
@@ -217,7 +217,7 @@ export default function Home() {
                             <input
                               type="radio"
                               value="mobile"
-                              name="entry.807958582"
+                              name="entry.2068790798"
                               checked={selectedOption === 'mobile'}
                               onChange={(e) => setSelectedOption(e.target.value)}
                               className={`hidden `}
@@ -237,7 +237,7 @@ export default function Home() {
                     <input 
                       type="email"
                       id="email"
-                      name="entry.165858962"
+                      name="entry.1312988306"
                       placeholder={'you@gmail.com'}
                       value={email}
                       className={`w-full h-11 font-rubik font-normal text-right px-3 border-2 border-[#D9D9D9] rounded-lg `}
@@ -250,7 +250,7 @@ export default function Home() {
                       التالي
                     </div>
                     :
-                    <button onClick={() => (email.includes("@gmail.com")) ? setStep('3') : setStep('2')}  type="submit" className="w-full h-11 flex justify-center items-center font-medium  text-white font-rubik bg-[#A78BF5] rounded-lg ">
+                    <button type="submit" className="w-full h-11 flex justify-center items-center font-medium  text-white font-rubik bg-[#A78BF5] rounded-lg ">
                       تسجيل دخول
                     </button>
                   }
@@ -263,5 +263,3 @@ export default function Home() {
     </>
   )
 }
-
-// https://docs.google.com/forms/d/e/1FAIpQLSePLzhT6B5fOD-Ml9kXvNN1SKxDHYtZEr5HCHItaGYKtysRYQ/viewform?usp=pp_url&entry.644568262=eefsad&entry.470914132=asdfasdf&entry.165858962=asdfasdf&entry.807958582=PC
