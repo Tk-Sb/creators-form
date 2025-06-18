@@ -34,6 +34,14 @@ export default function Home() {
     }
   }
 
+  const carouselImages = [
+    { id: 1, url: "./images/Artboard 1.png" },
+    { id: 2, url: "./images/Artboard 2.png" },
+    { id: 3, url: "./images/Artboard 3.png" },
+    { id: 4, url: "./images/Artboard 4.png" },
+    { id: 5, url: "./images/Artboard 5.png" },
+  ]
+
   return (
     <>
       <div className="hidden lg:block fixed " >
@@ -83,46 +91,39 @@ export default function Home() {
             </div>
             {step === '2' &&
               <>
-                <div className="w-full h-fit flex flex-col lg:flex-row-reverse justify-center items-center gap-7 ">
-                  <Carousel plugins={[Autoplay({delay: 3000,}),]} className="w-full cursor-grab ">
-                    <CarouselContent>
-                      {Array.from({ length: 5 }).map((_, index) => (
-                        <CarouselItem key={index}>
-                          <div className="w-full aspect-[200/250] p-1 bg-gray-600">
-                            <div>
-                              <div className="w-full h-full flex border-4 aspect-[200/250] items-center justify-center p-6">
-                                <span className="text-4xl font-semibold">{index + 1}</span>
-                              </div>
-                            </div>
-                          </div>
-                        </CarouselItem>
-                      ))}
-                    </CarouselContent>
-                  </Carousel>
-                  <div className="w-full h-fit text-base font-rubik font-medium text-center ">
-                    استغل ضمان ال 7 أيام استرداد كامل المبلغ… إذا طبّقت وما استفدت،  + خصم ال 30% يلي ما لح تكرر !
+                {selectedOption === 'computer' ? 
+                  <div className="w-full h-fit flex flex-col lg:flex-row-reverse justify-center items-center gap-7 ">
+                    <Carousel plugins={[Autoplay({delay: 5000,}),]} className="w-full cursor-grab ">
+                      <CarouselContent>
+                        {carouselImages.map((image) => (
+                          <CarouselItem key={image.id}>
+                            <img className="w-full aspect-[200/250] rounded-lg " src={image.url} alt={`Artboard ${image.id}`} />
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                    </Carousel>
+                    <div className="w-full h-fit text-base font-rubik font-medium text-center ">
+                      استغل ضمان ال 7 أيام استرداد كامل المبلغ… إذا طبّقت وما استفدت،  + خصم ال 30% يلي ما لح تكرر !
+                    </div>
                   </div>
-                </div>
+                    :
+                  <div className="w-full h-fit flex flex-col lg:flex-row-reverse justify-center items-center gap-7 ">
+                    <img className="w-full max-w-[400px] aspect-[200/250] rounded-lg " src="./images/Artboard 6.png" alt={`Artboard 6`} />
+                    <div className="w-full h-fit text-base font-rubik font-medium text-center ">
+                      استغل ضمان ال 7 أيام استرداد كامل المبلغ… إذا طبّقت وما استفدت،  + خصم ال 30% يلي ما لح تكرر !
+                    </div>
+                  </div>
+                }
               </>
             }
             {step === '3' &&
               <>
                 <div className="w-full h-fit flex flex-col lg:flex-row-reverse justify-center items-center gap-7 ">
-                  <Carousel plugins={[Autoplay({delay: 3000,}),]} className="w-full cursor-grab ">
-                    <CarouselContent>
-                      {Array.from({ length: 5 }).map((_, index) => (
-                        <CarouselItem key={index}>
-                          <div className="w-full aspect-[200/250] p-1 bg-gray-600">
-                            <div>
-                              <div className="w-full h-full flex border-4 aspect-[200/250] items-center justify-center p-6">
-                                <span className="text-4xl font-semibold">{index + 1}</span>
-                              </div>
-                            </div>
-                          </div>
-                        </CarouselItem>
-                      ))}
-                    </CarouselContent>
-                  </Carousel>
+                  {selectedOption === 'computer' ?
+                    <img className="w-full max-w-[400px] aspect-[200/250] rounded-lg " src="./images/Artboard 8.png" alt={`Artboard 8`} />
+                      :
+                    <img className="w-full max-w-[400px] aspect-[200/250] rounded-lg " src="./images/Artboard 7.png" alt={`Artboard 7`} />
+                  }
                   <div className="w-full h-fit text-base font-rubik font-medium text-center ">
                     سنقوم بالتواصل معك خلال 24 ساعة 
                     <br />
@@ -131,7 +132,7 @@ export default function Home() {
                 </div>
                 <a 
                   className="w-full h-11 flex justify-center items-center gap-2 font-medium  text-white font-rubik bg-[#25D366] rounded-lg cursor-pointer "
-                  href={`https://wa.me/${+963994446411}`}
+                  href={`https://wa.me/${+905064486099}`}
                 >
                   <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" clipRule="evenodd" d="M20.1344 4.5355C18.1654 2.56425 15.5469 1.47819 12.7571 1.47705C7.00889 1.47705 2.33043 6.15513 2.32818 11.9051C2.32738 13.7432 2.80761 15.5373 3.72027 17.1189L2.24072 22.523L7.76924 21.0728C9.29247 21.9036 11.0075 22.3416 12.753 22.3421H12.7572C12.7569 22.3421 12.7575 22.3421 12.7572 22.3421C18.5048 22.3421 23.1837 17.6636 23.1861 11.9135C23.1871 9.12684 22.1033 6.50667 20.1344 4.5355ZM12.7572 20.5809H12.7536C11.1983 20.5803 9.67275 20.1624 8.34188 19.3726L8.02539 19.1848L4.74469 20.0454L5.6204 16.8467L5.41428 16.5187C4.54662 15.1387 4.08836 13.5436 4.08904 11.9057C4.0909 7.12655 7.97946 3.23841 12.7607 3.23841C15.0759 3.23913 17.2523 4.14197 18.8888 5.7804C20.5254 7.41882 21.4261 9.59666 21.4252 11.9128C21.4232 16.6923 17.5348 20.5809 12.7572 20.5809Z" fill="white"/>
@@ -179,7 +180,7 @@ export default function Home() {
                       هل تريد تغيير حياتك باستخدام
                     </label>
                     <div className="w-full h-fit flex gap-4 ">
-                      <label className={`w-full h-fit py-2 px-3 flex flex-col justify-between items-center gap-8 border-2 ${selectedOption === 'computer' ? ' border-[#A78BF5] ' : 'border-[#D9D9D9] border-2 '} transition-colors  rounded-lg `} >
+                      <label className={`w-full h-fit py-2 px-3 flex flex-col justify-between items-center gap-8 border-2 cursor-pointer ${selectedOption === 'computer' ? ' border-[#A78BF5] ' : 'border-[#D9D9D9] border-2 '} transition-colors  rounded-lg `} >
                         <div className="w-full h-fit flex justify-between items-center ">
                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clipPath="url(#clip0_174_170)">
@@ -206,7 +207,7 @@ export default function Home() {
                           PC ,اللابتوب 
                         </div>
                       </label>
-                      <label className={`w-full h-fit py-2 px-3 flex flex-col justify-between items-center gap-8 border-2  ${selectedOption === 'mobile' ? ' border-[#A78BF5] ' : 'border-[#D9D9D9] '} transition-colors rounded-lg `} >
+                      <label className={`w-full h-fit py-2 px-3 flex flex-col justify-between items-center gap-8 border-2 cursor-pointer  ${selectedOption === 'mobile' ? ' border-[#A78BF5] ' : 'border-[#D9D9D9] '} transition-colors rounded-lg `} >
                         <div className="w-full h-fit flex justify-between items-center ">
                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15 2H9C6.8 2 5 3.8 5 6V18C5 20.2 6.8 22 9 22H15C17.2 22 19 20.2 19 18V6C19 3.8 17.2 2 15 2ZM17 18C17 19.1 16.1 20 15 20H9C7.9 20 7 19.1 7 18V6C7 4.9 7.9 4 9 4H15C16.1 4 17 4.9 17 6V18Z" fill="black"/>
@@ -245,7 +246,7 @@ export default function Home() {
                     />
                   </div>
                   {step === '1' ? 
-                    <div onClick={() => (username !== '' && phoneNumber !== '' && selectedOption !== '') ? setStep('2') : setStep('1')} className="w-full h-11 flex justify-center items-center font-medium  text-white font-rubik bg-[#A78BF5] rounded-lg ">
+                    <div onClick={() => (username !== '' && phoneNumber !== '' && selectedOption !== '') ? setStep('2') : setStep('1')} className="w-full h-11 flex justify-center items-center font-medium  text-white font-rubik bg-[#A78BF5] rounded-lg cursor-pointer ">
                       التالي
                     </div>
                     :
@@ -262,3 +263,5 @@ export default function Home() {
     </>
   )
 }
+
+
