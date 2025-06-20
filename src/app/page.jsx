@@ -35,7 +35,7 @@ export default function Home() {
   }
 
   const carouselImages = [
-    { id: 1, url: "./images/Artboard 1.webp" },
+    { id: 1, url: "https://files.edgestore.dev/0jvce83pji4k8o75/publicFiles/_public/6e6f3ca0-8052-4508-93fa-363aa34644f2.webp" },
     { id: 2, url: "./images/Artboard 2.webp" },
     { id: 3, url: "./images/Artboard 3.webp" },
     { id: 4, url: "./images/Artboard 4.webp" },
