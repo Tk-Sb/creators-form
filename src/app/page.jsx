@@ -35,7 +35,7 @@ export default function Home() {
   }
 
   const carouselImages = [
-    { id: 1, url: "./images/Artboard 1.jpg" },
+    { id: 1, url: "./images/Artboard 1.webp" },
     { id: 2, url: "./images/Artboard 2.jpg" },
     { id: 3, url: "./images/Artboard 3.jpg" },
     { id: 4, url: "./images/Artboard 4.jpg" },
