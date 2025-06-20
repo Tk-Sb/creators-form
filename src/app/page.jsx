@@ -36,10 +36,10 @@ export default function Home() {
 
   const carouselImages = [
     { id: 1, url: "https://files.edgestore.dev/0jvce83pji4k8o75/publicFiles/_public/6e6f3ca0-8052-4508-93fa-363aa34644f2.webp" },
-    { id: 2, url: "./images/Artboard 2.webp" },
-    { id: 3, url: "./images/Artboard 3.webp" },
-    { id: 4, url: "./images/Artboard 4.webp" },
-    { id: 5, url: "./images/Artboard 5.webp" },
+    { id: 2, url: "https://files.edgestore.dev/0jvce83pji4k8o75/publicFiles/_public/836869d9-d08d-4cd9-9573-f00c1dba9735.webp" },
+    { id: 3, url: "https://files.edgestore.dev/0jvce83pji4k8o75/publicFiles/_public/6fc00d8b-30c4-4136-afab-3209f9e92c9a.webp" },
+    { id: 4, url: "https://files.edgestore.dev/0jvce83pji4k8o75/publicFiles/_public/740d3e22-e390-4301-a729-a336d59a9b2d.webp" },
+    { id: 5, url: "https://files.edgestore.dev/0jvce83pji4k8o75/publicFiles/_public/330118e1-8af5-4bdd-bd17-dbce1e2246c4.webp" },
   ]
 
   return (
@@ -108,7 +108,7 @@ export default function Home() {
                   </div>
                     :
                   <div className="w-full h-fit flex flex-col lg:flex-row-reverse justify-center items-center gap-7 ">
-                    <img className="w-full max-w-[400px] aspect-[200/250] rounded-lg " src="./images/Artboard 6.webp" alt={`Artboard 6`} />
+                    <img className="w-full max-w-[400px] aspect-[200/250] rounded-lg " src="https://files.edgestore.dev/0jvce83pji4k8o75/publicFiles/_public/b5dc870f-663d-45fb-9a6e-da10e0fdc8c0.webp" alt={`Artboard 6`} />
                     <div className="w-full h-fit text-base font-rubik font-medium text-center ">
                       استغل ضمان ال 7 أيام استرداد كامل المبلغ… إذا طبّقت وما استفدت،  + خصم ال 30% يلي ما لح تكرر !
                     </div>
@@ -120,9 +120,9 @@ export default function Home() {
               <>
                 <div className="w-full h-fit flex flex-col lg:flex-row-reverse justify-center items-center gap-7 ">
                   {selectedOption === 'computer' ?
-                    <img className="w-full max-w-[400px] aspect-[200/250] rounded-lg " src="./images/Artboard 8.webp" alt={`Artboard 8`} />
+                    <img className="w-full max-w-[400px] aspect-[200/250] rounded-lg " src="https://files.edgestore.dev/0jvce83pji4k8o75/publicFiles/_public/7fe23d0f-940a-4002-acdd-a65049d58988.webp" alt={`Artboard 8`} />
                       :
-                    <img className="w-full max-w-[400px] aspect-[200/250] rounded-lg " src="./images/Artboard 7.webp" alt={`Artboard 7`} />
+                    <img className="w-full max-w-[400px] aspect-[200/250] rounded-lg " src="https://files.edgestore.dev/0jvce83pji4k8o75/publicFiles/_public/169a8fd6-e552-435b-ac5c-cda1f17db4ae.webp" alt={`Artboard 7`} />
                   }
                   <div className="w-full h-fit text-base font-rubik font-medium text-center ">
                     سنقوم بالتواصل معك خلال 24 ساعة 
