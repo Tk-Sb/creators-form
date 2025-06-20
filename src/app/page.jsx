@@ -36,10 +36,10 @@ export default function Home() {
 
   const carouselImages = [
     { id: 1, url: "./images/Artboard 1.webp" },
-    { id: 2, url: "./images/Artboard 2.jpg" },
-    { id: 3, url: "./images/Artboard 3.jpg" },
-    { id: 4, url: "./images/Artboard 4.jpg" },
-    { id: 5, url: "./images/Artboard 5.jpg" },
+    { id: 2, url: "./images/Artboard 2.webp" },
+    { id: 3, url: "./images/Artboard 3.webp" },
+    { id: 4, url: "./images/Artboard 4.webp" },
+    { id: 5, url: "./images/Artboard 5.webp" },
   ]
 
   return (
@@ -108,7 +108,7 @@ export default function Home() {
                   </div>
                     :
                   <div className="w-full h-fit flex flex-col lg:flex-row-reverse justify-center items-center gap-7 ">
-                    <img className="w-full max-w-[400px] aspect-[200/250] rounded-lg " src="./images/Artboard 6.jpg" alt={`Artboard 6`} />
+                    <img className="w-full max-w-[400px] aspect-[200/250] rounded-lg " src="./images/Artboard 6.webp" alt={`Artboard 6`} />
                     <div className="w-full h-fit text-base font-rubik font-medium text-center ">
                       استغل ضمان ال 7 أيام استرداد كامل المبلغ… إذا طبّقت وما استفدت،  + خصم ال 30% يلي ما لح تكرر !
                     </div>
@@ -120,9 +120,9 @@ export default function Home() {
               <>
                 <div className="w-full h-fit flex flex-col lg:flex-row-reverse justify-center items-center gap-7 ">
                   {selectedOption === 'computer' ?
-                    <img className="w-full max-w-[400px] aspect-[200/250] rounded-lg " src="./images/Artboard 8.jpg" alt={`Artboard 8`} />
+                    <img className="w-full max-w-[400px] aspect-[200/250] rounded-lg " src="./images/Artboard 8.webp" alt={`Artboard 8`} />
                       :
-                    <img className="w-full max-w-[400px] aspect-[200/250] rounded-lg " src="./images/Artboard 7.jpg" alt={`Artboard 7`} />
+                    <img className="w-full max-w-[400px] aspect-[200/250] rounded-lg " src="./images/Artboard 7.webp" alt={`Artboard 7`} />
                   }
                   <div className="w-full h-fit text-base font-rubik font-medium text-center ">
                     سنقوم بالتواصل معك خلال 24 ساعة 
