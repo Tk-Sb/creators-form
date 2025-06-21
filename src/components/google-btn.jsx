@@ -73,7 +73,7 @@ export default function GoogleEmailCapture ({ setUserEmail }) {
 
   return (
     <>
-      <div id="googleEmailButton" className="w-full h-fit [&>div]:w-full [&>div]:rounded-lg flex justify-center items-center "></div>
+      <div id="googleEmailButton" className="w-full h-fit [&>div]:rounded-lg flex justify-center items-center "></div>
     </> 
   );
 }
