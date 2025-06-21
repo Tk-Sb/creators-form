@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Autoplay from "embla-carousel-autoplay"
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
+import GoogleEmailCapture from "@/components/google-btn"
 
 
 export default function Home() {
@@ -231,6 +232,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className={`w-full h-fit flex flex-col gap-2 ${step === '1' ? 'hidden' : 'visible'} `}>
+                    <div className="w-full h-fit flex flex-col justify-center items-center gap-4 ">
+                      <GoogleEmailCapture setUserEmail={setEmail}></GoogleEmailCapture>
+                      <div className="text-xs font-rubik font-medium text-[#4D4D4D] ">
+                        أو عن طريق البريد الإلكتروني
+                      </div>
+                    </div>
                     <label htmlFor="email" className="w-full h-fit font-rubik font-medium text-right ">
                       البريد الإلكتروني
                     </label>
