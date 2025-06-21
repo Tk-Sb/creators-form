@@ -2,10 +2,9 @@
 
 import { useEffect, useState } from 'react';
 
-export default function GoogleEmailCapture() {
-  const [userEmail, setUserEmail] = useState('');
+export default function GoogleEmailCapture ({ setUserEmail }) {
   const [status, setStatus] = useState('idle'); // idle, loading, success, error
-
+  
   // Handle Google authentication response
   const handleCredentialResponse = (response) => {
     try {
