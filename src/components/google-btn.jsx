@@ -41,7 +41,7 @@ export default function GoogleEmailCapture ({ setUserEmail }) {
       window.google.accounts.id.renderButton(
         document.getElementById('googleEmailButton'),
         { 
-          theme: 'outline', 
+          theme: 'outline',
           size: 'large',
           text: 'signin_with',
           shape: 'rectangular',
@@ -73,7 +73,7 @@ export default function GoogleEmailCapture ({ setUserEmail }) {
 
   return (
     <>
-      <div id="googleEmailButton" className="w-full"></div>
+      <div id="googleEmailButton" className="w-full h-16 flex justify-center items-center bg-gray-800 "></div>
     </> 
   );
 }

@@ -251,7 +251,7 @@ export default function Home() {
                     </div>
                     :
                     <button type="submit" className="w-full h-11 flex justify-center items-center font-medium  text-white font-rubik bg-[#A78BF5] rounded-lg ">
-                      تسجيل دخول
+                      سجل الدخول لتثبيت وجودك بالكورس
                     </button>
                   }
                 </form>
